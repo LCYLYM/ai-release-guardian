@@ -1,0 +1,19 @@
+name: Release Guardian
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  artifact-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run unit tests
+        run: python3 -m unittest discover -s tests
+
+      - name: Scan repository artifact surface
+        run: python3 scripts/ai-release-guardian scan . --allowlist guardian-allowlist.json --fail-on high

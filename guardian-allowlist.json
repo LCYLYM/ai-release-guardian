@@ -1,0 +1,132 @@
+[
+  {
+    "rule_id": "ai-context-file",
+    "path": "tests/fixtures/risky/CLAUDE.md",
+    "reason": "Synthetic fixture used to verify detection of AI context files."
+  },
+  {
+    "rule_id": "secret-file",
+    "path": "tests/fixtures/risky/.env",
+    "reason": "Synthetic fixture used to verify detection of credential filenames."
+  },
+  {
+    "rule_id": "token-like-secret",
+    "path": "tests/fixtures/risky/.env",
+    "reason": "Synthetic non-secret value used to verify token-like content detection."
+  },
+  {
+    "rule_id": "mcp-config",
+    "path": "tests/fixtures/risky/.mcp.json",
+    "reason": "Synthetic fixture used to verify detection of MCP configuration files."
+  },
+  {
+    "rule_id": "debug-source-map",
+    "path": "tests/fixtures/risky/dist/app.js.map",
+    "reason": "Synthetic fixture used to verify detection of source map files."
+  },
+  {
+    "rule_id": "source-map-content",
+    "path": "tests/fixtures/risky/dist/app.js.map",
+    "reason": "Synthetic fixture used to verify detection of sourcesContent."
+  },
+  {
+    "rule_id": "source-map-pointer",
+    "path": "tests/fixtures/risky/dist/app.js",
+    "reason": "Synthetic fixture used to verify detection of sourceMappingURL."
+  },
+  {
+    "rule_id": "source-map-pointer",
+    "path": "README.md",
+    "reason": "Public documentation names sourceMappingURL as a risk indicator."
+  },
+  {
+    "rule_id": "source-map-content",
+    "path": "README.md",
+    "reason": "Public documentation names sourcesContent as a risk indicator."
+  },
+  {
+    "rule_id": "source-map-pointer",
+    "path": "ai-release-leak-investigation.md",
+    "reason": "Public research report discusses sourceMappingURL as a risk indicator."
+  },
+  {
+    "rule_id": "source-map-content",
+    "path": "ai-release-leak-investigation.md",
+    "reason": "Public research report discusses sourcesContent as a risk indicator."
+  },
+  {
+    "rule_id": "source-map-pointer",
+    "path": "plugins/ai-release-guardian/skills/ai-release-guardian/SKILL.md",
+    "reason": "Skill documentation names sourceMappingURL as a risk indicator."
+  },
+  {
+    "rule_id": "source-map-content",
+    "path": "plugins/ai-release-guardian/skills/ai-release-guardian/SKILL.md",
+    "reason": "Skill documentation names sourcesContent as a risk indicator."
+  },
+  {
+    "rule_id": "source-map-pointer",
+    "path": "plugins/ai-release-guardian/skills/ai-release-guardian/references/rules.md",
+    "reason": "Rules reference names sourceMappingURL as a documented detector."
+  },
+  {
+    "rule_id": "source-map-content",
+    "path": "plugins/ai-release-guardian/skills/ai-release-guardian/references/rules.md",
+    "reason": "Rules reference names sourcesContent as a documented detector."
+  },
+  {
+    "rule_id": "source-map-pointer",
+    "path": "plugins/ai-release-guardian/skills/ai-release-guardian/references/release-checklist.md",
+    "reason": "Checklist names sourceMappingURL as a release review item."
+  },
+  {
+    "rule_id": "source-map-content",
+    "path": "plugins/ai-release-guardian/skills/ai-release-guardian/references/release-checklist.md",
+    "reason": "Checklist names sourcesContent as a release review item."
+  },
+  {
+    "rule_id": "source-map-content",
+    "path": "tests/test_guardian.py",
+    "reason": "Unit test fixture code writes a synthetic sourcesContent string."
+  },
+  {
+    "rule_id": "internal-trace",
+    "path": "README.md",
+    "reason": "Public documentation lists internal trace markers as scanner examples."
+  },
+  {
+    "rule_id": "internal-trace",
+    "path": "ai-release-leak-investigation.md",
+    "reason": "Public research report cites internal trace markers from reported incidents."
+  },
+  {
+    "rule_id": "internal-trace",
+    "path": "ai_release_guardian/guardian.py",
+    "reason": "Scanner implementation contains the detector pattern."
+  },
+  {
+    "rule_id": "internal-trace",
+    "path": "guardian-allowlist.json",
+    "reason": "Allowlist documents rule exceptions for this public repository."
+  },
+  {
+    "rule_id": "internal-trace",
+    "path": "plugins/ai-release-guardian/skills/ai-release-guardian/SKILL.md",
+    "reason": "Skill documentation lists internal trace markers as release review items."
+  },
+  {
+    "rule_id": "internal-trace",
+    "path": "plugins/ai-release-guardian/skills/ai-release-guardian/references/release-checklist.md",
+    "reason": "Checklist documents internal trace markers as release review items."
+  },
+  {
+    "rule_id": "internal-trace",
+    "path": "plugins/ai-release-guardian/skills/ai-release-guardian/references/rules.md",
+    "reason": "Rules reference documents internal trace marker detection."
+  },
+  {
+    "rule_id": "internal-trace",
+    "path": "tests/test_guardian.py",
+    "reason": "Unit tests exercise internal trace detector strings."
+  }
+]

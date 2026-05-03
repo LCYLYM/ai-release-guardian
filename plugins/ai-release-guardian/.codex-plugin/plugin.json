@@ -1,0 +1,40 @@
+{
+  "name": "ai-release-guardian",
+  "version": "0.1.0",
+  "description": "Codex-ready release artifact guard for AI context files, source maps, prompts, MCP configs, and secrets.",
+  "author": {
+    "name": "AI Release Guardian contributors",
+    "email": "security@example.invalid",
+    "url": "https://github.com/LCYLYM/ai-release-guardian"
+  },
+  "homepage": "https://github.com/LCYLYM/ai-release-guardian",
+  "repository": "https://github.com/LCYLYM/ai-release-guardian",
+  "license": "MIT",
+  "keywords": [
+    "ai-security",
+    "claude-code",
+    "codex-plugin",
+    "artifact-scanner",
+    "source-map",
+    "mcp-security",
+    "secrets-scanning"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "AI Release Guardian",
+    "shortDescription": "Stop shipping AI context, source maps, prompts, MCP keys, and secrets.",
+    "longDescription": "Artifact-level release security workflow for the post-CLAUDE.md and post-Claude-Code-source-map era. Use it before publishing apps, npm packages, CLIs, archives, or open-source repos.",
+    "developerName": "AI Release Guardian contributors",
+    "category": "Developer Tools",
+    "capabilities": ["Read", "Analyze", "Review"],
+    "websiteURL": "https://github.com/LCYLYM/ai-release-guardian",
+    "privacyPolicyURL": "https://github.com/LCYLYM/ai-release-guardian#privacy",
+    "termsOfServiceURL": "https://github.com/LCYLYM/ai-release-guardian#license",
+    "defaultPrompt": [
+      "Scan this release artifact before I publish it.",
+      "Review this repo for AI context and prompt leaks.",
+      "Create a release gate for npm or app artifacts."
+    ],
+    "brandColor": "#0F766E"
+  }
+}

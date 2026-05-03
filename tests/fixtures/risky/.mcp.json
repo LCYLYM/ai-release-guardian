@@ -1,0 +1,1 @@
+{"mcpServers":{"example":{"command":"node","args":["server.js"],"env":{"SAMPLE_TOKEN":"not-a-real-token"}}}}

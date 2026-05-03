@@ -1,0 +1,3 @@
+display_name: AI Release Guardian
+short_description: Scan release artifacts for AI context, prompts, source maps, MCP config, and secrets.
+default_prompt: Scan this release artifact before I publish it.
